@@ -7,7 +7,7 @@ function mainpage() {
     <Topbar/>
     <div>
       this is main page body.
-      this is be comming soon :)))
+      this is comming soon :)))
     </div>
     </>
   )
