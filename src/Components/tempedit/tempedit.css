@@ -1,0 +1,10 @@
+.background {
+    background-image: url('C:\Users\hp\OneDrive\Desktop\synergy-frontend\src\Components\images\background.png');
+    /* Specify the path to your image */
+    background-size: cover;
+    /* Adjust the background size to cover the entire container */
+    background-position: center;
+    /* Set the background position to the center */
+    height: 100vh;
+    /* Set the height to 100% of the viewport height */
+}

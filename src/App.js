@@ -8,6 +8,8 @@ import PlatformfeedbackForm from './Components/PlatfromFeedback/Platformfeedback
 import ChangePasswordPage from './Components/passwordChange/changepassword.js';
 import ResetPasswordEmail from './Components/resetpassword/resetpasswordEmail.js';
 import ResetPasswordPage from './Components/resetpassword/resetpassword.js';
+import Tempedit from './Components/tempedit/tempedit.jsx';
+
 // import Temp from './Components/templates-page/temppage.jsx'
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
         <Route path="/feedback" element = {<PlatformfeedbackForm/>}/>
         <Route path='/emailrequest' element={<ResetPasswordEmail/>}/>
         <Route path='/resetpassword' element = {<ResetPasswordPage/>}/>
-        <Route path='/changePassword' elemen={<ChangePasswordPage/>}/>
+        <Route path='/changePassword' element={<ChangePasswordPage/>}/>
+        <Route path='/tempedit' element={<Tempedit/>}/>
         {/* <Route path="/template" element ={<Temp/>}/> */}
       </Routes>
     </Router>
