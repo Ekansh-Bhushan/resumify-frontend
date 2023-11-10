@@ -19,9 +19,9 @@ function App() {
         <Route path="/login" element = {<Login/>} />
         <Route path="/" element= {<Mainpage/>} />
         <Route path="/feedback" element = {<PlatformfeedbackForm/>}/>
-        <Route path='/changePassword' elemen={<ChangePasswordPage/>}/>
         <Route path='/emailrequest' element={<ResetPasswordEmail/>}/>
         <Route path='/resetpassword' element = {<ResetPasswordPage/>}/>
+        <Route path='/changePassword' elemen={<ChangePasswordPage/>}/>
         {/* <Route path="/template" element ={<Temp/>}/> */}
       </Routes>
     </Router>
