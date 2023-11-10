@@ -6,7 +6,7 @@ function topbar() {
 
   return (
     <div className='logo'>
-      Logo
+      Hey i am the top bar 
     </div>
   )
 }
