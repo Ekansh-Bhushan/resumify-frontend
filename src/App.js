@@ -4,14 +4,8 @@ import { BrowserRouter as Router, Route, Link, Switch, Routes } from 'react-rout
 import Signup from '../src/Components/signinpage/signup.jsx';
 import Login from './Components/signinpage/login.jsx';
 import Mainpage from './Components/mainpage/mainpage.js';
-import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
-import ChangePasswordPage from './Components/passwordChange/changepassword.js';
-import ResetPasswordEmail from './Components/resetpassword/resetpasswordEmail.js';
-import ResetPasswordPage from './Components/resetpassword/resetpassword.js';
-import Tempedit from './Components/tempedit/tempedit.jsx';
-
 // import Temp from './Components/templates-page/temppage.jsx'
-
+import Tempedit from './Components/tempedit/tempedit.jsx';
 function App() {
   return (
     <>
@@ -20,11 +14,7 @@ function App() {
         <Route path="/signup" element = {<Signup/>} />
         <Route path="/login" element = {<Login/>} />
         <Route path="/" element= {<Mainpage/>} />
-        <Route path="/feedback" element = {<PlatformfeedbackForm/>}/>
-        <Route path='/emailrequest' element={<ResetPasswordEmail/>}/>
-        <Route path='/resetpassword' element = {<ResetPasswordPage/>}/>
-        <Route path='/changePassword' element={<ChangePasswordPage/>}/>
-        <Route path='/tempedit' element={<Tempedit/>}/>
+        <Route path="/tempedit" element= {<Tempedit/>} />
         {/* <Route path="/template" element ={<Temp/>}/> */}
       </Routes>
     </Router>
