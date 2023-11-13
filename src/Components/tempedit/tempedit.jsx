@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+
 /* eslint-disable no-dupe-keys */
 import React, { useState } from 'react';
 import './tempedit.css'; // Import the CSS file for styling
 import resumeImage from "../../Components/images/blankdoc.png";
+import Topbar from '../topbar/topbar'
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react-hooks/rules-of-hooks */
 
@@ -22,22 +23,7 @@ function tempedit() {
     };
 
     return (
-        <><header>
-
-            <nav className="navbar">
-                <div className="left">
-                    {/* <img src= {logo} alt="Logo" className="logo" /> */}
-                </div>
-                <div className="right">
-                    <ul>
-                        <li><a href="/">Build your resume</a></li>
-                        <li><a href="/">Tutorial</a></li>
-                        <li><a href="/">Contact us</a></li>
-                        <li><img src="/" alt="Circular" className="circular-image" /></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <>    <Topbar />
             <div className='splitScreen'>
 
                 <section className='topPane'>
@@ -80,18 +66,18 @@ function tempedit() {
                         </section>
                         <section className='box1'>
 
-                        <div className='textcommon'>Email</div>
-                        <input type="text" placeholder="Email" style={TextBoxStyles} />
+                            <div className='textcommon'>Email</div>
+                            <input type="text" placeholder="Email" style={TextBoxStyles} />
                         </section>
                         <section className='box1'>
 
-                        <div className='textcommon'>Country</div>
-                        <input type="text" placeholder="Your Country" style={TextBoxStyles} />
+                            <div className='textcommon'>Country</div>
+                            <input type="text" placeholder="Your Country" style={TextBoxStyles} />
                         </section>
                         <section className='box1'>
 
-                        <div className='textcommon'>City</div>
-                        <input type="text" placeholder="Your City" style={TextBoxStyles} />
+                            <div className='textcommon'>City</div>
+                            <input type="text" placeholder="Your City" style={TextBoxStyles} />
                         </section>
                         {/* <section className='box1'>
 
@@ -112,6 +98,3 @@ function tempedit() {
 }
 // export default EditableField;
 export default tempedit
-=======
-
->>>>>>> 286db32ca834a403436f9af3461ca4546a4445eb
