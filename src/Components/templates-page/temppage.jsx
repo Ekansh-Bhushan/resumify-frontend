@@ -5,6 +5,7 @@ import company from '../../Components/images/comapny-specific.png';
 import minimal from '../../Components/images/minimal.png';
 import modern from '../../Components/images/modern.png';
 import professional from '../../Components/images/professional.png';
+import hamburger from '../../Components/images/ci_hamburger-lg.png';
 
 function temp() {
     return (
@@ -20,7 +21,9 @@ function temp() {
                         <li><a href="/">Contact us</a></li>
                         <li><img src="/" alt="Circular" className="circular-image" /></li>
                     </ul>
+                    
                 </div>
+                <img src={hamburger} alt="hamburger" className='hamburger'/>
             </nav>
             <div className="text">
                 Ready-to-Edit Resume <br/>Templates

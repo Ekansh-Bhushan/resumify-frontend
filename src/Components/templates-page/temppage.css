@@ -90,7 +90,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
     margin: auto;
     padding: 0%;
     margin-top: 80px;
@@ -99,14 +99,14 @@ body{
 .column {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 10px;
     /* justify-content: space-between; */
     /* margin-right: ; */
 }
 
 .links {
     /* gap: 10px; */
-    margin: 40px;
+    margin: 15px;
     /* color: #FFF;
 
     text-align: center;
@@ -157,5 +157,115 @@ body{
 .templates{
     display: flex;
     justify-content: baseline;
+    margin-bottom: 20px;
 
+}
+.hamburger{
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .navbar .right{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .text2{
+        font-size: 13px;
+    }
+    .icons{
+        width: 60px;
+        height: 60px;
+    }
+    .links{
+        font-size:medium;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .navbar{
+        font-size: 12px;
+    }
+    .text{
+        font-size: 35px;
+    }
+    .text2{
+        font-size: 13px;
+    }
+    .icons{
+        width: 60px;
+        height: 60px;
+    }
+    .links{
+        font-size:large;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar{
+        font-size: 12px;
+    }
+    .text{
+        font-size: 40px;
+    }
+    .text2{
+        font-size: 13px;
+    }
+    .icons{
+        width: 70px;
+        height: 70px;
+    }
+    .links{
+        font-size:large;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar{
+        font-size: 12px;
+    }
+    .text{
+        font-size: 45px;
+    }
+    .text2{
+        font-size: 15px;
+    }
+    .icons{
+        width: 70px;
+        height: 70px;
+    }
+    .links{
+        font-size:large;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 50px;
+    }
+    .text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+    .icons{
+        width: 90px;
+        height: 90px;
+    }
+    .links{
+        font-size: x-large;
+    }
 }
