@@ -1,13 +1,69 @@
-.logo{
-    background-color: blue;
+.topbar {
+    background-color: #190042;
     color: white;
-}
-
-.topbar{
-    background-color:  #190042;
-    ;
-}
-
-.menu-list{
-    color: white;
-}
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the width of the image as needed */
+    height: 45px;
+    margin-right: 10px;
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-list li {
+    margin-right: 0;
+    cursor: pointer;
+    font-size: 14px; /* Adjust the font size as needed */
+  padding: 5px 8px;
+  }
+  
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Add special circle around "Sign In" and "Log In" */
+  .menu-list .special-circle {
+    position: relative;
+  }
+  
+  .menu-list .special-circle::before {
+    content: '';
+    position: absolute;
+    width: 24px; /* Adjust the circle size as needed */
+    height: 24px;
+    background-color: #f00; /* Adjust the background color of the circle */
+    border-radius: 50%;
+    top: -6px; /* Adjust the vertical positioning */
+    left: -6px; /* Adjust the horizontal positioning */
+    z-index: -1;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .topbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu-list {
+      margin-top: 10px;
+    }
+  
+    .menu-list li {
+      margin: 0;
+    }
+  
+    .logo img {
+      width: 60px;
+      margin-right: 0;
+    }
+  }
+  

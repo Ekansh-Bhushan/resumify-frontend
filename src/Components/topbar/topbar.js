@@ -7,9 +7,10 @@ function topbar() {
   return (
     <>
     <nav className='topbar'>
-      <div>
+      <div className='logo'>
         {/* logo here */}
       <img src={logo} alt="" />
+      
       </div>
       <div className='menu-list'>
         <li>
@@ -27,16 +28,14 @@ function topbar() {
       </div>
       <div className='menu-list'>
         <li>
-          Login IN 
+          Login In  
         </li>
         <li>
-          Sign IN
+          Sign In
         </li>
       </div>
     </nav>
-    <div className='logo'>
-      Hey i am the top bar 
-    </div>
+    
     </>
   )
 }
