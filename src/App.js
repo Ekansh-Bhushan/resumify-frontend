@@ -6,6 +6,7 @@ import Login from './Components/signinpage/login.jsx';
 import Mainpage from './Components/mainpage/mainpage.js';
 // import Temp from './Components/templates-page/temppage.jsx'
 import Tempedit from './Components/tempedit/tempedit.jsx';
+import Temp from './Components/templates-page/temppage.jsx'
 function App() {
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
         <Route path="/login" element = {<Login/>} />
         <Route path="/" element= {<Mainpage/>} />
         <Route path="/tempedit" element= {<Tempedit/>} />
-        {/* <Route path="/template" element ={<Temp/>}/> */}
+        <Route path="/temppage" element ={<Temp/>}/>
       </Routes>
     </Router>
     </>
