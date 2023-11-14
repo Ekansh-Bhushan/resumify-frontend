@@ -20,7 +20,7 @@
 .topPane {
     width: 55%;
     /* background-image: url("background.png"); */
-    background-image: url('C:\Users\hp\OneDrive\Desktop\synergy-frontend\src\Components\images\background.png');
+    background-image: url('../../Components/images/background.png');
     background-size: cover;
     /* Adjust the background size to cover the entire container */
     background-position: center;
@@ -122,10 +122,10 @@
     line-height: 80px;
 }
 
-.text2 {
-    margin: 0%;
+.text21 {
     padding-left: 50px;
     padding-bottom: 20px;
+    /* padding-top: -80px; */
     color: var(--adaptive-medium, rgba(255, 255, 255, 0.80));
     font-family: Lexend;
     font-size: 15px;
@@ -147,12 +147,12 @@
     color: aliceblue;
 }
 
-.container{
+.container1{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    /* border: 4px solid white; */
-    /* height: 300px; */
+    
+    
 }
 .svg {
     display: 'flex';
@@ -175,7 +175,7 @@
 }
 .textcommon{
     padding-left: 25px;
-    /* padding-top: 10px; */
+    padding-top: 10px;
     font-size: '14px';
     color: white;
     font-family: "Lexend";
@@ -184,5 +184,6 @@
     /* border: 2px solid white; */
     width:250px;
     margin: 10px;
+    padding-left: 30px;
     
 }
