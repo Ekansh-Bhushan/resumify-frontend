@@ -2,35 +2,20 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import Topbar from '../topbar/topbar';
 
-function mainpage() {
+export default function Home() {
   return (
-    <>
-      <Topbar />
-      <section id="header" className="">
-        <div className="row">
-          <div className="col-10 max-auto">
-            <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1">
-              <h1>
-                BUILDING YOUR RESUME HAS NEVER BEEN MORE EASIER{' '}
-                <FontAwesomeIcon icon="fa-wand-magic-sparkles" />
-              </h1>
-              <h2 className="my-3">
-                Custom Resumes for many companies and more! to differentiate you from the crowd.
-              </h2>
-              <div className="mt-3">
-                <a href="" className="btn-get-started">
-                  Create My Resume
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6 order-1 order-lg-2 header-img">
-              <img src="path/to/your/image.jpg" className="img-fluid animated" alt="Description" />
-            </div>
-          </div>
+    <main className='flex flex-col my-24 mx-10'>
+      <div className='flex  md:mx-10 mx-3 mt-32 justify-start'>
+        <div>
+          <h1 className='text-white text-bold lg:text-5xl  md:text-3xl text-2xl font-bold  capitalize'>
+            Building Your <br /> resume has never<br /> been easier 🪄
+          </h1>
+          <p className='lg:text-xl md:text-lg text-lg text-gray-300 my-10'>
+            Custom Resumes for many and much more! To differentiate you<br/> from the crowd.
+          </p>
+          <button type="button" className="text-violet-300 p-5 btn-purple hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-3xl text-base  px-4 py-3 text-center dark:focus:ring-blue-800">Create My Resume</button>
         </div>
-      </section>
-    </>
-  );
+      </div>
+    </main>
+  )
 }
-
-export default mainpage;
