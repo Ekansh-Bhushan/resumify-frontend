@@ -7,6 +7,7 @@ import Mainpage from './Components/mainpage/mainpage.js';
 // import Temp from './Components/templates-page/temppage.jsx'
 import Tempedit from './Components/tempedit/tempedit.jsx';
 import Temp from './Components/templates-page/temppage.jsx'
+import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element= {<Mainpage/>} />
         <Route path="/tempedit" element= {<Tempedit/>} />
         <Route path="/temppage" element ={<Temp/>}/>
+        <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
       </Routes>
     </Router>
     </>

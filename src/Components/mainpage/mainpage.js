@@ -1,10 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
-import Topbar from '../topbar/topbar';
-import Footer from './footer';
+import Navbar from '../topbar/navbar';
+import Footer from '../footer/footer';
   
 export default function Home() {
   return (
+    <>
+    <Navbar/>
     <main className='flex flex-col my-24 mx-10'>
       <div className='flex  md:mx-10 mx-3 mt-32 justify-start'>
         <div>
@@ -18,5 +20,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+    <Footer/>
+    </>
   )
 }
