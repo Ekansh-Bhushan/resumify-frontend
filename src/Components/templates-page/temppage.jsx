@@ -22,24 +22,13 @@ import page3_3 from '../../Components/images/page3_3.png'
 import page3_4 from '../../Components/images/page3_4.png'
 import vector from '../../Components/images/Vector.png'
 import page4 from '../../Components/images/page4.png'
-
+import Navbar from "../topbar/navbar"
 function temp() {
     return (
+        <>
+        <Navbar/>
         <div className='background'>
-            <nav className="navbar">
-                <div className="left">
-                    <img src={logo} alt="Logo" className="logo" />
-                </div>
-                <div className="right">
-                    <ul>
-                        <li><a href="/">Build your resume</a></li>
-                        <li><a href="/">Tutorial</a></li>
-                        <li><a href="/">Contact us</a></li>
-                        <li><img src="/" alt="Circular" className="circular-image" /></li>
-                    </ul>
-                </div>
-                <img src={hamburger} alt="hamburger" className='hamburger' />
-            </nav>
+            
             <div className="text">
                 Ready-to-Edit Resume <br />Templates
             </div>
@@ -322,7 +311,7 @@ function temp() {
 
 
         </div>
-
+        </>
     )
 }
 export default temp
