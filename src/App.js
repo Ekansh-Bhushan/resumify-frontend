@@ -8,7 +8,10 @@ import Mainpage from './Components/mainpage/mainpage.js';
 import Tempedit from './Components/tempedit/tempedit.jsx';
 import Temp from './Components/templates-page/temppage.jsx'
 import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
+import Navbar from "./Components/topbar/navbar.js"
+
 function App() {
+
   return (
     <>
 <Router>
@@ -19,6 +22,7 @@ function App() {
         <Route path="/tempedit" element= {<Tempedit/>} />
         <Route path="/temppage" element ={<Temp/>}/>
         <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
+        <Route path="/navbar" elememt = {<Navbar/>}/>
       </Routes>
     </Router>
     </>

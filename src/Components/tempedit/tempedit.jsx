@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import './tempedit.css'; // Import the CSS file for styling
 import resumeImage from "../../Components/images/blankdoc.png";
-import Topbar from '../topbar/topbar'
+import Topbar from '../topbar/navbar'
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react-hooks/rules-of-hooks */
 

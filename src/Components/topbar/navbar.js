@@ -1,41 +1,41 @@
 
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useState } from 'react';
 
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 export default function Navbar3() {
     const [show, setShow] = useState(false);
     const navlink2 = "block text-2xl text-gray-600 my-3 hover:underline hover:underline-offset-4 animate__animated";
     const navlink = "text-sm text-white no-underline hover:underline hover:transition-all hover:duration-100 hover:ease-in-out";
     const navlink3 = "text-xl text-white italic font-bold no-underline hover:underline hover:transition-all hover:duration-100 hover:ease-in-out";
-    const handleClose = () => {
-        setShow(false)
-        router.refresh();
-    };
+    // const handleClose = () => {
+    //     setShow(false)
+    //     router.refresh();
+    // };
     const handleShow = () => setShow(true);
 
-    const navbarDB = [
-        {
-            title: "Build Your Resume",
-            id: "build",
-            link: "./build"
-        },
-        {
-            title: "Tutorial",
-            id: "tutorial",
-            link: "./tutorial"
-        },
-        {
-            title: "Contact Us",
-            id: "contact",
-            link: "./contact",
-        },
-        {
-            title: "My Account",
-            id: "account",
-            link: "./account",
-        }
-    ]
+    // const navbarDB = [
+    //     {
+    //         title: "Build Your Resume",
+    //         id: "build",
+    //         link: "./build"
+    //     },
+    //     {
+    //         title: "Tutorial",
+    //         id: "tutorial",
+    //         link: "./tutorial"
+    //     },
+    //     {
+    //         title: "Contact Us",
+    //         id: "contact",
+    //         link: "./contact",
+    //     },
+    //     {
+    //         title: "My Account",
+    //         id: "account",
+    //         link: "./account",
+    //     }
+    // ]
     const buttons = [
         {
             title: "Log In",
@@ -45,7 +45,7 @@ export default function Navbar3() {
             style: "bg-violet-900 text-purple-300"
         }
     ]
-    const router = useRouter();
+    // const router = useRouter();
 
     return (
 
@@ -69,21 +69,21 @@ export default function Navbar3() {
                 <div className="bg-transparent items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul className="self-end flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                        {
-                        navbarDB.map((item, index)=>{
-                            if(index == navbarDB.length -1){
-                                return(
-                                    <li className='mr-0' key={index}>
-                                    <a href="#" className="block font-light py-2 px-3 text-white rounded bg-transparent  md:p-0 " aria-current="page">{item.title}</a>
-                                </li>
-                                )
-                            }else{
-                                return(
-                                    <li key={index} className='mr-5'>
-                                    <a href="#" className="block font-light py-2 px-3 text-white rounded bg-transparent  md:p-0 " aria-current="page">{item.title}</a>
-                                </li>
-                                )
-                            }
-                        })
+                        // navbarDB.map((item, index)=>{
+                            // if(index == navbarDB.length -1){
+                            //     return(
+                            //         <li className='mr-0' key={index}>
+                            //         <a href="#" className="block font-light py-2 px-3 text-white rounded bg-transparent  md:p-0 " aria-current="page">{item.title}</a>
+                            //     </li>
+                            //     )
+                            // }else{
+                            //     return(
+                            //         <li key={index} className='mr-5'>
+                            //         <a href="#" className="block font-light py-2 px-3 text-white rounded bg-transparent  md:p-0 " aria-current="page">{item.title}</a>
+                            //     </li>
+                            //     )
+                            // }
+                        // })
                        } 
                        
                     </ul>
