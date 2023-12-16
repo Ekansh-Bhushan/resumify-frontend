@@ -9,6 +9,7 @@ import Tempedit from './Components/tempedit/tempedit.jsx';
 import Temp from './Components/templates-page/temppage.jsx'
 import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
 import Navbar from "./Components/topbar/navbar.js"
+import Thpage from "./Components/4thpage/4thpage.js"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/temppage" element ={<Temp/>}/>
         <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
         <Route path="/navbar" elememt = {<Navbar/>}/>
+        <Route path= "/thpage" element = {<Thpage/>}/>
       </Routes>
     </Router>
     </>

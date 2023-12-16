@@ -5,7 +5,8 @@ function thpage() {
     <>
 
     <div className=''>
-        
+       <h1>Hello wrold</h1> 
+
     </div>
     </>
   )
