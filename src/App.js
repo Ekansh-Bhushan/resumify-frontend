@@ -9,7 +9,8 @@ import Tempedit from './Components/tempedit/tempedit.jsx';
 import Temp from './Components/templates-page/temppage.jsx'
 import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
 import Navbar from "./Components/topbar/navbar.js"
-import Thpage from "./Components/4thpage/4thpage.js"
+import Thpage from './Components/fouthpg/fourthpg.js'
+import background from './Components/images/background.png'
 
 function App() {
 

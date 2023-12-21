@@ -1,0 +1,134 @@
+h2{
+    margin-top: 60px;
+    text-align: center;
+    color: #ccc;
+    opacity:0.7;
+  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ccc;
+  }
+   body{
+    background-image: url('../../Components/images/background.png');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  } 
+  
+  .photo-box {
+    color: #ccc;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top:50px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 20px;
+    /* background-image: url(shade1.jpg);  */
+    
+  }
+  .photo-box img {
+    
+    border-radius: 50%;
+    height: 70px;
+    width:70px;
+    position: absolute;
+    padding-right: 7px;
+  }
+
+  .photo-box p{
+    opacity:0.7;
+  }
+  
+  /* .text {
+    position:absolute;
+    bottom: 30px;
+    right: 0;
+    padding-right:80px;
+    
+    
+  } */
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .bullet-list li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 8px; 
+  
+  } 
+/* 
+  h5,h6{
+          
+    line-height: 1px;
+  } */
+  /* style.css */
+/* style.css */
+
+/* Default styles for testimonials */
+
+
+/* Media query for smaller screens */
+/* style.css */
+
+/* Default styles for testimonials */
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  /* Adjustments for smaller screens */
+  .photo-box {
+    width: auto;
+    float: none;
+    /* Modify styles for smaller screens */
+  }
+   .bullet-list{
+    width: auto;
+    bottom: auto;
+  } 
+}
+
+/* Media query for medium-sized screens like tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for medium-sized screens */
+  .photo-box {
+    width: auto;
+    float: none; /* Adjust width using vw units */
+    /* Modify styles for medium-sized screens */
+  }
+   .bullet-list{
+    width: auto;
+    bottom:auto;
+  } 
+}
+
+/* Media query for larger screens like laptops */
+@media screen and (min-width: 1024px) {
+  /* Adjustments for larger screens */
+  .photo-box {
+    width:45;
+    float: none;/* Adjust width using vw units */
+    /* Modify styles for larger screens */
+  }
+  .bullet-list{
+    width: auto;
+    bottom: auto;
+  } 
+}
