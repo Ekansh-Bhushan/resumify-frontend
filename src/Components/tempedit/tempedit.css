@@ -18,36 +18,47 @@
 
 
 .topPane {
-    width: 55%;
-    /* background-image: url("background.png"); */
+    width: 700px;
     background-image: url('../../Components/images/background.png');
     background-size: cover;
-    /* Adjust the background size to cover the entire container */
     background-position: center;
-    /* Set the background position to the center */
-    height: 100vh;
-    /* Set the height to 100% of the viewport height */
+    height: 100vh; /* Set the height to 100% of the viewport height */
     background-color: white;
-    height: 100vh;
     padding: 0%;
     margin: 0%;
-    /* flex:1; */
-    
-
+    overflow:auto; /* Enable vertical scrollbar if content overflows */
+    flex: 1;
 }
 
-
 .bottomPane {
-    width: 45%;
+    width: 600px;
     background-color: #1E1E1E;
     height: 100vh;
-
     padding: 0%;
     margin: 0%;
     flex-grow: 3;
     flex-shrink: 3;
+    flex: 1; /* Take remaining space in the flex container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.livepreview {
+    text-align: center; /* Optional: Center the content horizontally */
+    color: black;
+  }
+h4{
+    color:white;
 }
 
+.white-rectangle {
+    width: 350px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    background-color: #ffffff; /* White background color */
+    border-radius: 10px; /* Example border radius, adjust as needed */
+    border: 2px solid #ccc; /* Example border style, adjust as needed */
+  }
 .image {
     width: 400px;
     height: 500px;
@@ -187,3 +198,4 @@
     padding-left: 30px;
     
 }
+

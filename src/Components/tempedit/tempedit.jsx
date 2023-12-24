@@ -1,13 +1,31 @@
-
 /* eslint-disable no-dupe-keys */
 import React, { useState } from 'react';
 import './tempedit.css'; // Import the CSS file for styling
-import resumeImage from "../../Components/images/blankdoc.png";
-import Topbar from '../topbar/navbar'
+import Topbar from '../topbar/navbar';
+import Infosys from '../customised_resumes/infosys';
+import Intel from '../customised_resumes/intel';
+// import resumeImage from "../../Components/images/blankdoc.png";
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react-hooks/rules-of-hooks */
 
 function tempedit() {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        // Add other fields as needed
+    });
+
+    // Event handler for input changes
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+
     const TextBoxStyles = {
         borderRadius: '10px',
         border: '2px solid #D9D9D9',
@@ -50,7 +68,8 @@ function tempedit() {
                         <section className='box1'>
 
                             <div className='textcommon'>First name</div>
-                            <input type="text" placeholder="Enter your first name" style={TextBoxStyles} />
+                            {/* <input type="text" placeholder="Enter your first name" style={TextBoxStyles} /> */}
+                            <input type="text" name="name" placeholder="Enter your first name" style={TextBoxStyles} value={formData.name} onChange={handleInputChange} />
                         </section>
                         <section className='box1'>
 
@@ -70,7 +89,8 @@ function tempedit() {
                         <section className='box1'>
 
                             <div className='textcommon'>Email</div>
-                            <input type="text" placeholder="Email" style={TextBoxStyles} />
+                            {/* <input type="text" placeholder="Email" style={TextBoxStyles} /> */}
+                            <input type="text" name="email" placeholder="Email" style={TextBoxStyles} value={formData.email} onChange={handleInputChange} />
                         </section>
                         <section className='box1'>
 
@@ -91,9 +111,18 @@ function tempedit() {
 
                 </section>
                 <section className='bottomPane'>
-                    <div className="abc">
-                        {/* <img src={resumeImage} alt="resume" /> */}
+                    <div className='livepreview'>
+
+                        <h4>Live Preview</h4>
+                    <div className="white-rectangle">
+                    {/* <Infosys /> */}
+                    {/* <Intel/> */}
+                        <p> {formData.name}</p>
+                        <p>{formData.email}</p>
                     </div>
+                    </div>
+
+
                 </section>
             </div></>
 
