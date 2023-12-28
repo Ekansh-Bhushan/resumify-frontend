@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import person1 from '../images/person1.jpg'
 import person2 from '../images/person2.jpg'
