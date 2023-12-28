@@ -116,7 +116,7 @@ function tempedit() {
                         <h4>Live Preview</h4>
                     <div className="white-rectangle">
                     {/* <Infosys /> */}
-                    {/* <Intel/> */}
+                    
                         <p> {formData.name}</p>
                         <p>{formData.email}</p>
                     </div>
