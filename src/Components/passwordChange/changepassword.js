@@ -52,7 +52,7 @@ function ChangePasswordPage() {
           <div className='input-area-second'>
             <label className='newpassword-label-area' htmlFor="newPassword">New Password:</label>
             <input
-              type="password"
+              type="text"
               id="newPassword"
               className='newpassword-area'
               value={newPassword}
