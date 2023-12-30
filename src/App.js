@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch, Routes } from 'react-router-dom';
-import Signup from '../src/Components/signinpage/signup.jsx';
+import Signup from '../src/Components/signup/signup.jsx';
 import Login from './Components/signinpage/login.jsx';
 import Mainpage from './Components/mainpage/mainpage.js';
 // import Temp from './Components/templates-page/temppage.jsx'
@@ -16,6 +16,7 @@ import Thpage from './Components/fouthpg/fourthpg.js'
 import background from './Components/images/background.png'
 import ChangePasswordPage from './Components/passwordChange/changepassword.js'
 import ResetPasswordEmail from './Components/resetpassword/resetpasswordEmail'
+import Footer1 from './Components/footer/footer1.js'
 import Footer from './Components/footer/footer.js'
 import ForgotPasswordPage from './Components/forgotpassword/forgotpassword.js'
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/tempedit" element= {<Tempedit/>} />
         <Route path="/temppage" element ={<Temp/>}/>
         <Route path="/footer" element ={<Footer/>}/>
+        <Route path="/footer1" element ={<Footer1/>}/>
         <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
         <Route path="/navbar" elememt = {<Navbar/>}/>
         <Route path= "/thpage" element = {<Thpage/>}/>
