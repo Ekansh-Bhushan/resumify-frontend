@@ -13,6 +13,8 @@ import Infosys from './Components/customised_resumes/infosys.jsx';
 import Intel from './Components/customised_resumes/intel.jsx';
 import Thpage from './Components/fouthpg/fourthpg.js'
 import background from './Components/images/background.png'
+import ChangePasswordPage from './Components/passwordChange/changepassword.js'
+import Changepassword from './Components/changepassword/changepassword1.jsx'
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
         <Route path= "/thpage" element = {<Thpage/>}/>
         <Route path= "/infosys" element = {<Infosys/>}/>
         <Route path= "/intel" element = {<Intel/>}/>
+        <Route path= "/changePasswordPage" element = {<ChangePasswordPage/>}/>
+        <Route path= "/changepassword" element = {<Changepassword/>}/>
         
       </Routes>
     </Router>

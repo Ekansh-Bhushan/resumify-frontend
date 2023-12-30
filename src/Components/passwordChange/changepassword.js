@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import '../passwordChange/changepassword.css'
-
+import Topbar from '../topbar/navbar';
 function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -30,45 +30,51 @@ function ChangePasswordPage() {
     // Implement the logic to navigate to the password recovery page.
     navigate('/forgotPassword');
   };
-
+  
   return (
-    <div>
-      <h1 className='heading'>Change Password</h1>
-      <form className='form-making' onSubmit={handlePasswordChange}>
-        <div className='input-area'>
-          <label className='label-area' htmlFor="currentPassword">Current Password:</label>
-          <input
-            type="password"
-            id="currentPassword"
-            className='changepasswordarea'
-            value={currentPassword}
-            onChange={(e) => setCurrentPassword(e.target.value)}
-          />
-        </div>
-        <div className='input-area-second'>
-          <label className='newpassword-label-area' htmlFor="newPassword">New Password:</label>
-          <input
-            type="password"
-            id="newPassword"
-            className='newpassword-area'
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-          />
-        </div>
-        <div className='confirmPassword-area'>
-          <label htmlFor="confirmPassword">Confirm New Password:</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            className='confirmpassword-input-area'
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-        </div>
-        <button className='change-password-button-area' type="submit" onClick={() => navigate('/homepage')}>Change Password</button>
-      </form>
-     
+    <>
+    <Topbar/>
+    <div className='body'>
+      <div className='box'>
+       
+        <form className='form-making' onSubmit={handlePasswordChange}>
+        <div className='cptext'>Change Password</div>
+          <div className='input-area'>
+            <label className='label-area' htmlFor="currentPassword">Current Password:</label>
+            <input
+              type="password"
+              id="currentPassword"
+              className='changepasswordarea'
+              value={currentPassword}
+              onChange={(e) => setCurrentPassword(e.target.value)}
+            />
+          </div>
+          <div className='input-area-second'>
+            <label className='newpassword-label-area' htmlFor="newPassword">New Password:</label>
+            <input
+              type="password"
+              id="newPassword"
+              className='newpassword-area'
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              />
+          </div>
+          <div className='confirmPassword-area'>
+            <label className='newpassword-label-area' htmlFor="confirmPassword">Confirm New Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              className='confirmpassword-input-area'
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+          </div>
+          <button className='change-password-button-area' type="submit" onClick={() => navigate('/homepage')}>Change Password</button>
+        </form>
+      </div>
+
     </div>
+              </>
   );
 }
 
