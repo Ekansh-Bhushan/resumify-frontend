@@ -8,13 +8,16 @@ import Tempedit from './Components/tempedit/tempedit.jsx';
 import Temp from './Components/templates-page/temppage.jsx'
 import PlatformfeedbackForm from './Components/PlatfromFeedback/PlatformfeedbackForm.js';
 import Navbar from "./Components/topbar/navbar.js"
-// import Thpage from "./Components/4thpage/4thpage.js"
+import ResetPasswordPage from './Components/resetpassword/resetpassword.js'
+
 import Infosys from './Components/customised_resumes/infosys.jsx';
 import Intel from './Components/customised_resumes/intel.jsx';
 import Thpage from './Components/fouthpg/fourthpg.js'
 import background from './Components/images/background.png'
 import ChangePasswordPage from './Components/passwordChange/changepassword.js'
-import Changepassword from './Components/changepassword/changepassword1.jsx'
+import ResetPasswordEmail from './Components/resetpassword/resetpasswordEmail'
+import Footer from './Components/footer/footer.js'
+import ForgotPasswordPage from './Components/forgotpassword/forgotpassword.js'
 
 function App() {
 
@@ -27,13 +30,19 @@ function App() {
         <Route path="/" element= {<Mainpage/>} />
         <Route path="/tempedit" element= {<Tempedit/>} />
         <Route path="/temppage" element ={<Temp/>}/>
+        <Route path="/footer" element ={<Footer/>}/>
         <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
         <Route path="/navbar" elememt = {<Navbar/>}/>
         <Route path= "/thpage" element = {<Thpage/>}/>
         <Route path= "/infosys" element = {<Infosys/>}/>
         <Route path= "/intel" element = {<Intel/>}/>
         <Route path= "/changePasswordPage" element = {<ChangePasswordPage/>}/>
-        <Route path= "/changepassword" element = {<Changepassword/>}/>
+        <Route path= "/resetpasswordemail" element = {<ResetPasswordEmail/>}/>
+        <Route path= "/resetpasswordpage" element = {<ResetPasswordPage/>}/>
+        <Route path= "/forgotpasswordpage" element = {<ForgotPasswordPage/>}/>
+        
+
+
         
       </Routes>
     </Router>

@@ -1,7 +1,8 @@
+// forgotpassword
 import React, { useState } from 'react';
 import Topbar from '../topbar/navbar';
 import '../passwordChange/changepassword.css'
-function ResetPasswordPage() {
+function ForgotPasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -32,11 +33,11 @@ function ResetPasswordPage() {
     
       
       <form className='form-making' onSubmit={handlePasswordChange}>
-      <div className='cptext'>Reset Password</div>
+      <div className='cptext'>Forgot Password</div>
         <div className='input-area-second'>
-          <label className= 'newpassword-label-area'htmlFor="newPassword">New Password:</label>
+          <label className= 'newpassword-label-area'htmlFor="newPassword">Enter Mobile Number:</label>
           <input
-            type="password"
+            type="number"
             id="newPassword"
             className='newpassword-area'
             value={newPassword}
@@ -44,9 +45,9 @@ function ResetPasswordPage() {
             />
         </div>
         <div className='newpassword-label-area'>
-          <label htmlFor="confirmPassword">Confirm New Password:</label>
+          <label htmlFor="confirmPassword">Enter OTP:</label>
           <input
-            type="password"
+            type="number"
             id="confirmPassword"
             className='confirmpassword-input-area'
             value={confirmPassword}
@@ -61,4 +62,4 @@ function ResetPasswordPage() {
   );
 }
 
-export default ResetPasswordPage;
+export default ForgotPasswordPage;

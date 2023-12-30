@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../passwordChange/changepassword.css'
+import Topbar from '../topbar/navbar';
 function ResetPasswordEmail() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -23,9 +24,14 @@ function ResetPasswordEmail() {
   };
 
   return (
-    <div>
-      <h1 className='heading'>Reset Password</h1>
+    <>
+    <Topbar/>
+    <div className='body'>
+      <div className='box'>
+
+      
       <form className='form-making' onSubmit={handlePasswordChange}>
+      <div className='cptext'>Reset Password</div>
         <div className='input-area-second'>
           <label className= 'newpassword-label-area'htmlFor="newPassword">Enter Your Email :</label>
           <input
@@ -34,12 +40,14 @@ function ResetPasswordEmail() {
             className='newpassword-area'
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
-          />
+            />
         </div>
 
         <button className='change-password-button-area' type="submit" >Submit</button>
       </form>
     </div>
+            </div>
+            </>
   );
 }
 
