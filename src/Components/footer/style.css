@@ -22,7 +22,7 @@
 .footer-frame508 {
   gap: 20px;
   top: 50px;
-  left: 80px;
+  left: 100px;
   width: calc(100% - 100px);
   display: flex;
   position: absolute;
@@ -50,7 +50,7 @@
 }
 .footer-text02 {
   color: rgba(255, 255, 255, 1);
-  width: 273px;
+  width: 373px;
   height: auto;
   font-size: 13px;
   font-style: Regular;
@@ -63,7 +63,7 @@
   
 }
 .footer-frame493 {
-  gap: 34px;
+  gap: 14px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -85,7 +85,7 @@
 .footer-text04 {
   color: rgba(255, 255, 255, 1);
   height: auto;
-  font-size: 15px;
+  font-size: 16px;
   font-style: SemiBold;
   text-align: left;
   font-family: Lexend;
@@ -102,6 +102,7 @@
   line-height: 1.5;
 }
 .footer-frame506 {
+  width: 223px;
   gap: 8px;
   display: flex;
   align-items: flex-start;

@@ -55,7 +55,7 @@ class Footer1 extends Component{
                     <div className="footer-frame486">
                       <div className="footer-frame479">
                         <span className="footer-text04"><span>Company Name</span></span>
-                        <img alt="Line213015" src="public/external/line213015-xgj.svg" className="footer-line21" />
+                        {/* <img alt="Line213015" src="public/external/line213015-xgj.svg" className="footer-line21" /> */}
                       </div>
                       <div className="footer-frame506">
                         <div className="footer-frame494">
