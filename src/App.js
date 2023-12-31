@@ -17,7 +17,7 @@ import background from './Components/images/background.png'
 import ChangePasswordPage from './Components/passwordChange/changepassword.js'
 import ResetPasswordEmail from './Components/resetpassword/resetpasswordEmail'
 import Footer1 from './Components/footer/footer1.js'
-import Footer from './Components/footer/footer.js'
+
 import ForgotPasswordPage from './Components/forgotpassword/forgotpassword.js'
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Route path="/" element= {<Mainpage/>} />
         <Route path="/tempedit" element= {<Tempedit/>} />
         <Route path="/temppage" element ={<Temp/>}/>
-        <Route path="/footer" element ={<Footer/>}/>
+        
         <Route path="/footer1" element ={<Footer1/>}/>
         <Route path="/feedback" element ={<PlatformfeedbackForm/>}/>
         <Route path="/navbar" elememt = {<Navbar/>}/>
