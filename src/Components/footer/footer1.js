@@ -41,7 +41,7 @@ class Footer1 extends Component{
               <div className="footer-footer">
                 <div className="footer-frame508">
                   <div className="footer-frame507">
-                    <span className="footer-text"><span>LOGO</span></span>
+                    <span className="footer-text"><span></span>LOGO</span>
                     <span className="footer-text02">
                       <span>
                         A tempor lacus turpis non mi a. Congue sed suspendisse etiam
