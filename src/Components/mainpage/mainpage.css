@@ -1,1 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.main {
+    color: white;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: Lexend;
+}
+
+.block {
+    color: white;
+    padding: 20px;
+    background-image: url(../../Components/images/Group\ 52.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin: 20px; */
+    /* height: 24px; */
+    /* width: 344px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-family: Lexend;
+    margin-top: 14px;
+}
+
+/* .topblock {
+    font-size: 30px;
+}
+
+.bottomblock {
+    font-size: 15px;
+} */
+
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+.blocks1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.blocks2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.create_resume {
+    border-radius: 50px;
+    padding: 7px 12px;
+    width: 180px;
+    font-size: 15px;
+    color: var(--secondary-900, #E1D1FD);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    border: 2px solid #270066;
+
+    background: linear-gradient(95deg, rgba(75, 1, 196, 0.60) 0%, rgba(75, 1, 196, 0.00) 100%), #1D014B;
+    cursor: pointer;
+    font-family: Lexend;
+
+
+}
+
+.blockcontainer {
+    /* margin-to/p: auto; */
+    /* margin-bottom: auto; */
+}
+
+@media (max-width: 600px) {
+    .navbar .right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main {}
+
+    .blockcontainer {
+        margin-top: 1000px;
+        /* width: auto; */
+    }
+
+    .container {
+        width: auto;
+    }
+
+
+    .block {
+        width: 273px;
+        height: 0%;
+        /* display: flex; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blocks1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* margin-top: auto; */
+        /* margin-top: 30%; */
+    }
+
+    .blocks2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .topblock {
+        font-size: 20px;
+
+    }
+
+    .bottomblock {
+        font-size: 9px;
+
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .block {
+        width: 43%;
+        height: 203px;
+        margin: 12px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .blocks1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockcontainer {
+        /* margin-top: 800px; */
+        top: 48%;
+    }
+
+    .topblock {
+        font-size: 20px;
+
+    }
+
+    .bottomblock {
+        font-size: 9px;
+
+    }
+
+    .main {
+        width: 250px;
+    }
+
+    h6 {
+        font-size: 11px;
+        margin-bottom: -10px;
+    }
+
+    .container {
+        /* width: 100%; */
+        /* margin: 100px; */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .block {
+        width: 41%;
+        /* height: 200px; */
+        margin: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blocks1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockcontainer {
+        /* margin-top: 800px; */
+        top: 50%;
+    }
+
+    .topblock {
+        font-size: 22px;
+
+    }
+
+    .bottomblock {
+        font-size: 10px;
+
+    }
+
+    .main {
+        width: 250px;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .main {
+
+        position: relative;
+        /* top: 0%;
+        left: 0%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockcontainer {
+        position: absolute;
+        /* margin-top: 1000px; */
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .block {
+        width: 41%;
+        /* height: 200px; */
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blocks1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockcontainer {
+        /* margin-top: 800px; */
+    }
+
+    .topblock {
+        font-size: 22px;
+
+    }
+
+    .bottomblock {
+        font-size: 10px;
+
+    }
+
+    .main {
+        width: 40%;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 10px;
+        text-align: center;
+        /* margin-bottom: -10px; */
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .block {
+        width: 42%;
+        /* padding: 10px; */
+        /* height: 200px; */
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blocks1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockcontainer {
+        /* margin-top: 800px; */
+    }
+
+    .topblock {
+        font-size: 26px;
+
+    }
+
+    .bottomblock {
+        font-size: 12px;
+
+    }
+
+    .main {
+        width: 40%;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 10px;
+        text-align: center;
+        /* margin-bottom: -10px; */
+    }
+
+}
