@@ -42,6 +42,7 @@ function App() {
         <Route path= "/resetpasswordemail" element = {<ResetPasswordEmail/>}/>
         <Route path= "/resetpasswordpage" element = {<ResetPasswordPage/>}/>
         <Route path= "/forgotpasswordpage" element = {<ForgotPasswordPage/>}/>
+        <Route path= "/resetpasswordemail" element = {<ResetPasswordEmail/>}/>
         
 
 

@@ -55,11 +55,11 @@ class Footer1 extends Component{
                     <div className="footer-frame486">
                       <div className="footer-frame479">
                         <span className="footer-text04"><span>Company Name</span></span>
-                        {/* <img alt="Line213015" src="public/external/line213015-xgj.svg" className="footer-line21" /> */}
+                        <img alt="Line213015" src="./assets/Line21.svg" className="footer-line21" />
                       </div>
                       <div className="footer-frame506">
                         <div className="footer-frame494">
-                          <img alt="phoneline3015" src="public/external/phoneline3015-30c.svg" className="footer-phoneline" />
+                          <img alt="phoneline3015" src="./assets/phoneline.svg" className="footer-phoneline" />
                           <span className="footer-text06">
                             <span>
                               <span>Phone:</span>
@@ -69,7 +69,7 @@ class Footer1 extends Component{
                           </span>
                         </div>
                         <div className="footer-frame495">
-                          <img alt="mailline3015" src="public/external/mailline3015-i8b8.svg" className="footer-mailline" />
+                          <img alt="mailline3015" src="./assets/mailline.svg" className="footer-mailline" />
                           <span className="footer-text11">
                             <span>
                               <span>Email:</span>
@@ -79,7 +79,7 @@ class Footer1 extends Component{
                           </span>
                         </div>
                         <div className="footer-frame496">
-                          <img alt="mappinline3015" src="public/external/mappinline3015-lxkr.svg" className="footer-mappinline" />
+                          <img alt="mappinline3015" src="./assets/mappinline.svg" className="footer-mappinline" />
                           <span className="footer-text16">
                             <span>
                               <span>Address:</span>
