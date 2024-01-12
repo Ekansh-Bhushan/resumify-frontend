@@ -1,7 +1,7 @@
 /* eslint-disable no-dupe-keys */
 import React, { useState } from 'react';
 import './tempedit.css'; // Import the CSS file for styling
-import Topbar from '../topbar/navbar';
+import Topbar from '../topbar/topbar';
 import Infosys from '../customised_resumes/infosys';
 import Intel from '../customised_resumes/intel';
 // import resumeImage from "../../Components/images/blankdoc.png";

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Topbar from '../topbar/navbar';
+import Topbar from '../topbar/topbar';
 import '../passwordChange/changepassword.css'
 function ResetPasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('');

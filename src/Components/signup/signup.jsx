@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { useNavigate } from "react-router-dom";
 import './style.css'
-import Topbar from '../topbar/navbar';
+import Topbar from '../topbar/topbar';
 
 class Signup extends Component{
     render() {

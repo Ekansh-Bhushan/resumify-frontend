@@ -22,7 +22,7 @@ import page3_3 from '../../Components/images/page3_3.png'
 import page3_4 from '../../Components/images/page3_4.png'
 import vector from '../../Components/images/Vector.png'
 import page4 from '../../Components/images/page4.png'
-import Navbar from "../topbar/navbar"
+import Navbar from "../topbar/topbar"
 function temp() {
     return (
         <>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../passwordChange/changepassword.css'
-import Topbar from '../topbar/navbar';
+import Topbar from '../topbar/topbar';
 function ResetPasswordEmail() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');

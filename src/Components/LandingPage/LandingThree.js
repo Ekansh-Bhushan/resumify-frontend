@@ -1,15 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
-import Navbar from '../topbar/navbar';
-import Footer from '../footer/footer';
-import Footer1 from '../footer/footer1.js';
-import Topbar from '../topbar/navbar';
-// import frame from '../../Components/images/Frame.png';
-  
-export default function Home() {
+
+import './LandingThree.css';  
+export default function LandingThree() {
   return (
     <>
-    <Navbar/>
+
     <div className='container'>
      
       <div className='main'>
@@ -73,12 +69,7 @@ export default function Home() {
             </div>
         </div>
       </div>
-    </div>  
-    <Topbar/>
-    {/* <Thpage/> */}
-    <Footer1/>
-    
-    
+    </div>
     </>
   )
 }

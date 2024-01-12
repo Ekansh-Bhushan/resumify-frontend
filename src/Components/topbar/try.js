@@ -3,8 +3,13 @@
 import { useState } from 'react';
 import Logo from "../images/synergy.png"
 import hamburger from "../images/ci_hamburger-lg.png"
-// import { useRouter } from 'next/navigation';
+import { useNavigate } from "react-router-dom";
+
+
+
+
 export default function Navbar3() {
+    const navigate = useNavigate()
     const [show, setShow] = useState(false);
     const navlink2 = "block text-2xl text-gray-600 my-3 hover:underline hover:underline-offset-4 animate__animated";
     const navlink = "text-sm text-white no-underline hover:underline hover:transition-all hover:duration-100 hover:ease-in-out";

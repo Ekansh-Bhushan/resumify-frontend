@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import '../passwordChange/changepassword.css'
-import Topbar from '../topbar/navbar';
+import Topbar from '../topbar/topbar';
 function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
